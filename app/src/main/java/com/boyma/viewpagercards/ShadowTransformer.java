@@ -1,8 +1,9 @@
 package com.boyma.viewpagercards;
 
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.CardView;
 import android.view.View;
+
+import androidx.cardview.widget.CardView;
+import androidx.viewpager.widget.ViewPager;
 
 import static com.boyma.viewpagercards.ConstantsKt.MAX_ELEVATION_FACTOR;
 

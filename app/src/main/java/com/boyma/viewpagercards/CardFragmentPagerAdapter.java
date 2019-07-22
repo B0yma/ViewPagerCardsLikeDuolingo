@@ -1,10 +1,11 @@
 package com.boyma.viewpagercards;
 
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v7.widget.CardView;
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
@@ -47,7 +48,7 @@ public class CardFragmentPagerAdapter extends FragmentStatePagerAdapter implemen
 
     @NonNull
     @Override
-    public Object instantiateItem(ViewGroup container, int position) {
+    public Object instantiateItem(@NonNull ViewGroup container, int position) {
         Object fragment = super.instantiateItem(container, position);
         fragments.set(position, (CardFragment) fragment);
         return fragment;
